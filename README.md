@@ -1,2 +1,4 @@
 # kpriya97.github.io
-Website with github
+
+Hello,
+Welcome to my GitHub Website (Created using design template from HTML5UP)
