@@ -44,16 +44,29 @@
 						<p> If you have any comments or would like to get in touch with me, fill the form below or write to my email directly.</p>
 						<div class="row">
 							<div class="col-8 col-12-small">
-								<form method="post" action="mail.php">
+								<form name="gform" id="gform" enctype="text/plain"
+									  action="https://docs.google.com/forms/d/e/1FAIpQLSeagKgXLYXxdYHKp_Xi6emahVElnM99TGFdHSeu9tFfQ7T97A/formResponse?"
+									  target="hidden_iframe" onsubmit="submitted=true;">
 									<div class="row gtr-uniform gtr-50">
-										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-										<div class="col-12"> <textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+										<div class="col-6 col-12-xsmall"><input type="text" name="entry.585272410" id="entry.585272410" placeholder="Name" /></div>
+										<div class="col-6 col-12-xsmall"><input type="email" name="entry.1318091591" id="entry.1318091591" placeholder="Email" /></div>
+										<div class="col-12"> <textarea name="entry.369742467" id="entry.369742467" placeholder="Message" rows="4"></textarea></div>
 										<div> <ul class="actions"> <li> <input type="submit" value="Send Message" /> </li> </ul> </div>
 									</div>
 								</form>
 
+								<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 							</div>
+
+							<script src="assets/js/jquery.min.js"></script>
+							<script type="text/javascript">var submitted=false;</script>
+							<script type="text/javascript">
+								$('#gform').on('submit', function(e) {
+								  $('#gform *').fadeOut(2000);
+								  $('#gform').prepend('Your submission has been processed...');
+								  });
+							</script>
+
 							<div class="col-4 col-12-small">
 								<ul class="labeled-icons">
 									<li>
