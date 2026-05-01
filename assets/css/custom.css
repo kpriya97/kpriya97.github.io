@@ -1,0 +1,152 @@
+/* Professional design overrides for Priya Kempanna's portfolio */
+
+/* Load semibold weight for Source Sans Pro */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400&display=swap");
+
+/* ─── Accent colour: muted navy blue replacing template teal ─────────── */
+
+a {
+    color: #3d5a80;
+}
+a:hover {
+    color: #2e4a6e !important;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #3d5a80;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:hover {
+    border-color: #3d5a80;
+    color: #3d5a80 !important;
+}
+
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="button"]:active,
+.button:active {
+    background-color: rgba(61, 90, 128, 0.08);
+    border-color: #3d5a80;
+    color: #3d5a80 !important;
+}
+
+.button.primary {
+    background-color: #3d5a80;
+    border-color: #3d5a80;
+}
+.button.primary:hover {
+    background-color: #4a6a90;
+    border-color: #4a6a90;
+}
+
+/* ─── Sidebar: deep navy replacing dark brown ────────────────────────── */
+
+#header {
+    background-color: #1c2b3a;
+}
+
+/* ─── Typography: use semibold for visual weight ─────────────────────── */
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+
+#header h1 {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1em;
+    line-height: 1.5em;
+    font-weight: 600;
+}
+
+#header strong {
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+}
+
+/* ─── Sidebar subtitle ───────────────────────────────────────────────── */
+
+#header .subtitle {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8em;
+    font-weight: 400;
+    line-height: 1.6em;
+    display: block;
+    margin-top: 0.4em;
+}
+
+/* ─── Sidebar navigation ─────────────────────────────────────────────── */
+
+#header nav {
+    margin-top: 2em;
+}
+
+#header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1em;
+}
+
+#header nav ul li {
+    margin: 0;
+    padding: 0;
+}
+
+#header nav ul li a {
+    color: rgba(255, 255, 255, 0.5);
+    border-bottom: none;
+    display: block;
+    font-size: 0.75em;
+    letter-spacing: 0.12em;
+    padding: 0.45em 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+#header nav ul li a:hover,
+#header nav ul li a.active {
+    color: rgba(255, 255, 255, 0.9) !important;
+    border-bottom: none;
+}
+
+/* ─── Main content refinements ───────────────────────────────────────── */
+
+#main > section {
+    border-top-color: #eaeaea;
+}
+
+header.major h2 {
+    font-size: 1.8em;
+}
+
+/* Code tags: match accent palette */
+code {
+    background: #f0f4f8;
+    border-color: #c8d8e8;
+    color: #3d5a80;
+    font-size: 0.82em;
+}
+
+/* Labeled icons: tighten up contact section */
+ul.labeled-icons li {
+    line-height: 1.6em;
+}
+
+/* Footer icons */
+#footer .icons a:hover {
+    color: rgba(255, 255, 255, 0.85) !important;
+}
+
+/* Section headings spacing */
+#main h2 {
+    margin-bottom: 0.6em;
+}
